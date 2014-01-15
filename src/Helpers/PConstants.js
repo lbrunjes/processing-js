@@ -141,6 +141,15 @@ module.exports = {
     RED_MASK:   0x00ff0000,
     GREEN_MASK: 0x0000ff00,
     BLUE_MASK:  0x000000ff,
+    
+     // for messages
+ 		CHATTER: 		0,
+  	COMPLAINT: 	1,
+  	PROBLEM: 		2,
+
+  // types of transformation matrices
+	  PROJECTION:	0,
+  	MODELVIEW:	1,
 
     // Projection matrices
     CUSTOM:       0,
@@ -148,6 +157,7 @@ module.exports = {
     PERSPECTIVE:  3,
 
     // Shapes
+   
     POINT:          2,
     POINTS:         2,
     LINE:           4,
@@ -175,9 +185,10 @@ module.exports = {
     // Shape Vertex
     VERTEX:        0,
     BEZIER_VERTEX: 1,
-    CURVE_VERTEX:  2,
-    BREAK:         3,
-    CLOSESHAPE:    4,
+    QUAD_BEZIER_VERTEX:2,
+    CURVE_VERTEX:  3,
+    BREAK:         4,
+    CLOSESHAPE:    5,
 
     // Shape closing modes
     OPEN:  1,
@@ -191,6 +202,10 @@ module.exports = {
     CENTER:          3, // Draw from the center, using second pair of values as the diameter
     DIAMETER:        3, // Synonym for the CENTER constant. Draw from the center
     CENTER_DIAMETER: 3, // Deprecated! Use DIAMETER instead
+    
+    //Arc Drawing Modes
+    CHORD:	2,
+    PIE:		3,
 
     // Text vertical alignment modes
     BASELINE: 0,   // Default vertical alignment for text placement
@@ -201,6 +216,10 @@ module.exports = {
     NORMAL:     1,
     NORMALIZED: 1,
     IMAGE:      2,
+    
+    //Texture Wrapping Modes
+    CLAMP: 	0,//Textures are clamted to theri edges
+    REPEAT:	1,//Textures wrap around when uv vualeus go outside 0..01 range
 
     // Text placement modes
     MODEL: 4,
@@ -267,6 +286,12 @@ module.exports = {
     TEXT:     'text',
     WAIT:     'wait',
     NOCURSOR: "url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='), auto",
+    
+    //Screen oprientation, for android
+    /*
+   	PORTRAIT: 1,
+  	LANDSCAPE:2,
+    */
 
     // Hints
     DISABLE_OPENGL_2X_SMOOTH:     1,
@@ -279,6 +304,8 @@ module.exports = {
     DISABLE_DEPTH_SORT:          -5,
     DISABLE_OPENGL_ERROR_REPORT:  6,
     ENABLE_OPENGL_ERROR_REPORT:  -6,
+    DISABLE_OPENGL_ERRORS:  			6,
+    ENABLE_OPENGL_ERRORS:  				-6,
     ENABLE_ACCURATE_TEXTURES:     7,
     DISABLE_ACCURATE_TEXTURES:   -7,
     HINT_COUNT:                  10,
