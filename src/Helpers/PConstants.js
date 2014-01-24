@@ -278,6 +278,12 @@ module.exports = {
     META:      157,
     INSERT:    155,
 
+    //Screen oprientation, for android
+    /*
+   	PORTRAIT: 1,
+  	LANDSCAPE:2,
+    */
+
     // Cursor types
     ARROW:    'default',
     CROSS:    'crosshair',
@@ -287,12 +293,6 @@ module.exports = {
     WAIT:     'wait',
     NOCURSOR: "url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='), auto",
     
-    //Screen oprientation, for android
-    /*
-   	PORTRAIT: 1,
-  	LANDSCAPE:2,
-    */
-
     // Hints
     DISABLE_OPENGL_2X_SMOOTH:     1,
     ENABLE_OPENGL_2X_SMOOTH:     -1,
@@ -308,7 +308,21 @@ module.exports = {
     ENABLE_OPENGL_ERRORS:  				-6,
     ENABLE_ACCURATE_TEXTURES:     7,
     DISABLE_ACCURATE_TEXTURES:   -7,
-    HINT_COUNT:                  10,
+    DISABLE_DEPTH_MASK:           8;
+		ENABLE_DEPTH_MASK:           -8;
+		DISABLE_OPTIMIZED_STROKE:     9;
+		ENABLE_OPTIMIZED_STROKE:     -9;
+
+		ENABLE_STROKE_PERSPECTIVE:    10
+		DISABLE_STROKE_PERSPECTIVE:  -10
+		DISABLE_TEXTURE_MIPMAPS:      11
+		ENABLE_TEXTURE_MIPMAPS:      -11
+		ENABLE_STROKE_PURE:           12
+		DISABLE_STROKE_PURE:         -12
+		ENABLE_RETINA_PIXELS:         13;
+		DISABLE_RETINA_PIXELS:       -13;
+    
+    HINT_COUNT:                  14,
 
     // PJS defined constants
     SINCOS_LENGTH:      720,       // every half degree

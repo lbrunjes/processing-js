@@ -9856,6 +9856,30 @@
 
       // An image as a background in 3D is not implemented yet
     };
+    
+    //Clears the canvas
+    /**
+    * Clears the pixels within a buffer. 
+    * Processisng.js doesnt really differentiate between createGraphics and a sketch
+    * So, we just allow it in both and hope no one notices
+    * @see background
+    * 
+    */
+    
+     Drawing2D.prototype.clear = function(){
+	     saveContext();
+	     curContext.setTransform(1, 0, 0, 1, 0, 0);
+	     curContext.clearRect(0,0, p.width, p.height);
+	     restoreContext();
+     }
+     
+      Drawing3D.prototype.clear = function(){
+	     saveContext();
+	     curContext.setTransform(1, 0, 0, 1, 0, 0);
+	     curContext.clearColor(0,0,0,0);
+	     curContext.clear(curContext.COLOR_BUFFER_BIT | curContext.DEPTH_BUFFER_BIT);
+	     restoreContext();
+     }
 
     // Draws an image to the Canvas
     /**
