@@ -143,13 +143,13 @@ module.exports = {
     BLUE_MASK:  0x000000ff,
     
      // for messages
- 		CHATTER: 		0,
-  	COMPLAINT: 	1,
-  	PROBLEM: 		2,
+     CHATTER:     0,
+    COMPLAINT:   1,
+    PROBLEM:     2,
 
   // types of transformation matrices
-	  PROJECTION:	0,
-  	MODELVIEW:	1,
+    PROJECTION:  0,
+    MODELVIEW:  1,
 
     // Projection matrices
     CUSTOM:       0,
@@ -204,8 +204,8 @@ module.exports = {
     CENTER_DIAMETER: 3, // Deprecated! Use DIAMETER instead
     
     //Arc Drawing Modes
-    CHORD:	2,
-    PIE:		3,
+    CHORD:  2,
+    PIE:    3,
 
     // Text vertical alignment modes
     BASELINE: 0,   // Default vertical alignment for text placement
@@ -218,8 +218,8 @@ module.exports = {
     IMAGE:      2,
     
     //Texture Wrapping Modes
-    CLAMP: 	0,//Textures are clamted to theri edges
-    REPEAT:	1,//Textures wrap around when uv vualeus go outside 0..01 range
+    CLAMP:   0,//Textures are clamted to theri edges
+    REPEAT:  1,//Textures wrap around when uv vualeus go outside 0..01 range
 
     // Text placement modes
     MODEL: 4,
@@ -280,8 +280,8 @@ module.exports = {
 
     //Screen oprientation, for android
     /*
-   	PORTRAIT: 1,
-  	LANDSCAPE:2,
+     PORTRAIT: 1,
+    LANDSCAPE:2,
     */
 
     // Cursor types
@@ -304,26 +304,26 @@ module.exports = {
     DISABLE_DEPTH_SORT:          -5,
     DISABLE_OPENGL_ERROR_REPORT:  6,
     ENABLE_OPENGL_ERROR_REPORT:  -6,
-    DISABLE_OPENGL_ERRORS:  			6,
-    ENABLE_OPENGL_ERRORS:  				-6,
+    DISABLE_OPENGL_ERRORS:        6,
+    ENABLE_OPENGL_ERRORS:        -6,
     ENABLE_ACCURATE_TEXTURES:     7,
     DISABLE_ACCURATE_TEXTURES:   -7,
-    DISABLE_DEPTH_MASK:           8;
-		ENABLE_DEPTH_MASK:           -8;
-		DISABLE_OPTIMIZED_STROKE:     9;
-		ENABLE_OPTIMIZED_STROKE:     -9;
+    DISABLE_DEPTH_MASK:           8,
+    ENABLE_DEPTH_MASK:           -8,
+    DISABLE_OPTIMIZED_STROKE:     9,
+    ENABLE_OPTIMIZED_STROKE:     -9,
 
-		ENABLE_STROKE_PERSPECTIVE:    10
-		DISABLE_STROKE_PERSPECTIVE:  -10
-		DISABLE_TEXTURE_MIPMAPS:      11
-		ENABLE_TEXTURE_MIPMAPS:      -11
-		ENABLE_STROKE_PURE:           12
-		DISABLE_STROKE_PURE:         -12
-		ENABLE_RETINA_PIXELS:         13;
-		DISABLE_RETINA_PIXELS:       -13;
+    ENABLE_STROKE_PERSPECTIVE:    10,
+    DISABLE_STROKE_PERSPECTIVE:  -10,
+    DISABLE_TEXTURE_MIPMAPS:      11,
+    ENABLE_TEXTURE_MIPMAPS:      -11,
+    ENABLE_STROKE_PURE:           12,
+    DISABLE_STROKE_PURE:         -12,
+    ENABLE_RETINA_PIXELS:         13,
+    DISABLE_RETINA_PIXELS:       -13,
     
     HINT_COUNT:                  14,
-
+  
     // PJS defined constants
     SINCOS_LENGTH:      720,       // every half degree
     PRECISIONB:         15,        // fixed point precision is limited to 15 bits!!
